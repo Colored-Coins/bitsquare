@@ -1,45 +1,20 @@
-<img src="https://bitsquare.io/images/logo.png" width="240"/>
+<img src="https://bitsquare.io/images/logo.png" width="176"/><br>
+<img src="http://coloredcoins.org/wordpress/wp-content/themes/Coloredcoins/imgs/logo-footer.png" width="176"/>
 
-[![Build Status](https://travis-ci.org/bitsquare/bitsquare.svg?branch=master)](https://travis-ci.org/bitsquare/bitsquare)
+Experimental build of [Bitsquare](https://github.com/bitsquare/bitsquare) allowing to add arbitrary colored coins to the currency list and thus allowing to trade colored coins. Exchange process itself is completely done by existing Bitsquare code. See Bitsquare documentation on how to do the trade: https://bitsquare.io/
 
+Fork status
+-----------
 
-What is Bitsquare?
-------------------
+This build requires seed nodes to run the same version. We have two seed nodes running on TEST network, their addresses are already in the code. For other networks your have to run your own seed nodes. PLEASE DO NOT USE THIS BUILD ON MAINNET.
 
-Bitsquare is a cross-platform desktop application that allows users to trade national currency (dollars, euros, etc) for bitcoin without relying on centralized exchanges such as Coinbase, Bitstamp or (the former) Mt. Gox.
-
-By running Bitsquare on their local machines, users form a peer-to-peer network. Offers to buy and sell bitcoin are broadcast to that network, and through the process of offering and accepting these trades via the Bitsquare UI, a market is established.
-
-There are no central points of control or failure in the Bitsquare network. There are no trusted third parties. When two parties agree to trade national currency for bitcoin, the bitcoin to be bought or sold is held in escrow using multisignature transaction capabilities native to the bitcoin protocol.
-
-Because the national currency portion of any trade must be transferred via traditional means such as a wire transfer, Bitsquare incorporates first-class support for human arbitration to resolve any errors or disputes.
-
-You can read about all of this and more in the [whitepaper](https://bitsquare.io/bitsquare.pdf), [arbitration](https://bitsquare.io/arbitration_system.pdf) and [risk analysis](https://bitsquare.io/risk_analysis.pdf) documents. Several [videos](https://bitsquare.io/blog/category/video) are available as well.
-
-Status
-------
-Bitsquare has releases the beta version on the 27th of April 2016 after 3 months testing on mainnet.  
-For the latest version checkout our [releases page](https://github.com/bitsquare/bitsquare/releases) at Github.
-
-Building from source
---------------------
-
-See [doc/build.md](doc/build.md).
-
-[AUR for Arch Linux](https://aur.archlinux.org/packages/bitsquare-git)
-
-
-Staying in Touch
-----------------
-
-Contact the team and keep up to date using any of the following:
-
- - The [Bitsquare Website](https://bitsquare.io)
- - The [#bitsquare](https://webchat.freenode.net/?channels=bitsquare) IRC channel on Freenode ([logs](https://botbot.me/freenode/bitsquare)) 
- - Our [mailing list](https://groups.google.com/forum/#!forum/bitsquare)
- - [@bitsquare_](https://twitter.com/bitsquare_) on Twitter
- - Get in [contact](https://bitsquare.io/contact/) with us
- - GitHub [Issues](https://github.com/bitsquare/bitsquare/issues)
+How to add colored coin:
+-----------------------
+1. Go to Account > Altcoins > Add new account > Add colored coin
+2. Enter assetId of the colored coin you'd like to add
+3. Enter currency code for the coin. Bitsquare will add -CC to it to avoid conflicts. E.g. if you put USD code, new currency will have USD-CC code
+4. Click "Add" and wait for a few seconds. If succeed the form should be hidden automatically. You colored coin is now available to use among other altcoins.
+5. Make a trade as usual (see Bitsquare docs on that).
 
 
 License
