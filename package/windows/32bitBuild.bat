@@ -6,9 +6,9 @@
 :: 64 bit build
 :: Needs Inno Setup 5 or later (http://www.jrsoftware.org/isdl.php)
 
-SET version=0.4.9.5
+SET version=0.4.9.5.1-colored
 SET jdk=C:\Program Files\Java\jdk1.8.0_92
-SET outdir=\\VBOXSVR\vm_shared_windows_32bit
+SET outdir=C:\bitsquare
 
 call "%jdk%\bin\javapackager.exe" -deploy ^
 -BappVersion="%version%" ^

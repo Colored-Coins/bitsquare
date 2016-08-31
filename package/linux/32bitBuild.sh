@@ -6,10 +6,10 @@ mkdir -p gui/deploy
 set -e
 
 # Edit version
-version=0.4.9.5
+version=0.4.9.5.1-colored
 
-jarFile="/media/sf_vm_shared_ubuntu14_32bit/Bitsquare-$version.jar"
-jdkfixFile="/media/sf_vm_shared_ubuntu14_32bit/jdkfix-$version.jar"
+jarFile="gui/target/shaded.jar"
+jdkfixFile="jdkfix/target/jdkfix-0.4.9.5.jar"
 
 # Note: fakeroot needs to be installed on linux
 $JAVA_HOME/bin/javapackager \
@@ -18,7 +18,7 @@ $JAVA_HOME/bin/javapackager \
     -Bruntime="$JAVA_HOME/jre" \
     -BappVersion=$version \
     -Bcategory=Internet \
-    -Bemail=team@bitsquare.io \
+    -Bemail=7r0ggy@gmail.com \
     -BlicenseType=GPLv3 \
     -BlicenseFile=LICENSE \
     -Bicon=package/linux/icon.png \
@@ -34,7 +34,7 @@ $JAVA_HOME/bin/javapackager \
 
 # sudo alien -r -c -k gui/deploy/bundles/bitsquare-$version.deb
 
-mv "gui/deploy/bundles/bitsquare-$version.deb" "/media/sf_vm_shared_ubuntu14_32bit/Bitsquare-32bit-$version.deb"
+mv "gui/deploy/bundles/bitsquare-$version.deb" "dist/Bitsquare-32bit-$version.deb"
 # mv "bitsquare-$version-1.i386.rpm" "/media/sf_vm_shared_ubuntu14_32bit/Bitsquare-32bit-$version.rpm"
 rm -r gui/deploy/
 

@@ -5,22 +5,22 @@ mkdir -p gui/deploy
 
 set -e
 
-version="0.4.9.5"
+version="0.4.9.5.1-colored"
 
 mvn clean package -DskipTests -Dmaven.javadoc.skip=true
 
 cp gui/target/shaded.jar "gui/deploy/Bitsquare-$version.jar"
-cp gui/target/shaded.jar "/Users/mk/vm_shared_ubuntu/Bitsquare-$version.jar"
-cp gui/target/shaded.jar "/Users/mk/vm_shared_windows/Bitsquare-$version.jar"
-cp gui/target/shaded.jar "/Users/mk/vm_shared_ubuntu14_32bit/Bitsquare-$version.jar"
-cp gui/target/shaded.jar "/Users/mk/vm_shared_windows_32bit/Bitsquare-$version.jar"
+#cp gui/target/shaded.jar "/Users/mk/vm_shared_ubuntu/Bitsquare-$version.jar"
+#cp gui/target/shaded.jar "/Users/mk/vm_shared_windows/Bitsquare-$version.jar"
+#cp gui/target/shaded.jar "/Users/mk/vm_shared_ubuntu14_32bit/Bitsquare-$version.jar"
+#cp gui/target/shaded.jar "/Users/mk/vm_shared_windows_32bit/Bitsquare-$version.jar"
 
 cp seednode/target/SeedNode.jar "gui/deploy/SeedNode-$version.jar"
 
-cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_ubuntu/jdkfix-$version.jar"
-cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_windows/jdkfix-$version.jar"
-cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_ubuntu14_32bit/jdkfix-$version.jar"
-cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_windows_32bit/jdkfix-$version.jar"
+#cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_ubuntu/jdkfix-$version.jar"
+#cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_windows/jdkfix-$version.jar"
+#cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_ubuntu14_32bit/jdkfix-$version.jar"
+#cp jdkfix/target/jdkfix-$version.jar "/Users/mk/vm_shared_windows_32bit/jdkfix-$version.jar"
 
 echo "Using JAVA_HOME: $JAVA_HOME"
 $JAVA_HOME/bin/javapackager \
