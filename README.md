@@ -8,6 +8,21 @@ Fork status
 
 This build requires seed nodes to run the same version. We have two seed nodes running on TEST network, their addresses are already in the code. For other networks your have to run your own seed nodes. PLEASE DO NOT USE THIS BUILD ON MAINNET.
 
+Install
+-------
+
+[Download for Windows 32bit](https://drive.google.com/open?id=0BwpJG6mFrYacTktMYm12cG82N1E)
+
+[Download for Windows 64bit](https://drive.google.com/open?id=0BwpJG6mFrYacSXc5MG42RENpaVU)
+
+[Download for Linux 32bit]()
+
+[Download for Linux 64bit]()
+
+[Download for Mac]()
+
+These builds work on TESTNET by default.
+
 How to add colored coin:
 -----------------------
 1. Go to Account > Altcoins > Add new account > Add colored coin
