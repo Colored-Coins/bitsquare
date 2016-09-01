@@ -15,9 +15,9 @@ Install
 
 [Download for Windows 64bit](https://drive.google.com/open?id=0BwpJG6mFrYacSXc5MG42RENpaVU)
 
-[Download for Linux 32bit]()
+[Download for Linux 32bit](https://drive.google.com/open?id=0BwpJG6mFrYacTHpPMkswTmVsQ0k)
 
-[Download for Linux 64bit]()
+[Download for Linux 64bit](https://drive.google.com/open?id=0BwpJG6mFrYacQ1U0cXRkYml5TjA)
 
 [Download for Mac]()
 
